@@ -7,11 +7,11 @@ public class exer02 {
 
         int[]num = new int[8];
         int soma=0;
-
-        for(int i=0; i<8; i++){
-            System.out.println("Escreva o "+(i+1)+ "º número");
+        //usar o numero.lenght
+        for(int i=0; i< num.length; i++){
+            System.out.println("Escreva o "+(i + 1)+ "º número");
              num[i] = entrada.nextInt();
-
+             //verifica se é par
              if(num[i] %2==0  ){
                  soma += num[i];
              }

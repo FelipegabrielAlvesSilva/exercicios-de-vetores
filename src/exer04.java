@@ -7,7 +7,7 @@ public class exer04 {
         int[] num = new int[10];
 
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < num.length; i++) {
             System.out.println("Digite o " + (i + 1) + "º número:");
             num[i] = entrada.nextInt();
         }
@@ -19,12 +19,12 @@ public class exer04 {
         int posMenor = 0;
 
         // Percorrendo o vetor
-        for (int i = 1; i < 10; i++) {
+        for (int i = 1; i < num.length; i++) {
             if (num[i] > maior) {
                 maior = num[i];
                 posMaior = i+1;
             }
-
+           //Defenindo a posição
             if (num[i] < menor) {
                 menor = num[i];
                 posMenor = i+1;
