@@ -9,7 +9,7 @@ public class exer07 {
         double soma = 0;
 
         // Entrada
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < salarios.length; i++) {
             System.out.println("Digite o salário:");
             salarios[i] = entrada.nextDouble();
             soma += salarios[i];
@@ -20,7 +20,7 @@ public class exer07 {
         int acima = 0, abaixo = 0, igual = 0;
 
         // Verificação
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < salarios.length; i++) {
             if (salarios[i] > media) acima++;
             else if (salarios[i] < media) abaixo++;
             else igual++;

@@ -7,14 +7,15 @@ public class exer08 {
         Scanner entrada = new Scanner(System.in);
         int[] numeros = new int[5];
 
+        System.out.println("Digite os números");
         // Entrada
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < numeros.length; i++) {
             numeros[i] = entrada.nextInt();
         }
 
         // Bubble Sort
-        for (int i = 0; i < 5 - 1; i++) {
-            for (int j = 0; j < 5 - 1; j++) {
+        for (int i = 0; i < numeros.length - 1; i++) {
+            for (int j = 0; j < numeros.length - 1; j++) {
                 if (numeros[j] > numeros[j + 1]) {
                     int temp = numeros[j];
                     numeros[j] = numeros[j + 1];
