@@ -18,7 +18,7 @@ public class exer05 {
         boolean encontrado = false;//usado para saber se é verdadeiro ou falso
 
         // Percorrendo o vetor
-        for (int i = 1; i < nome.length; i++) {
+        for (int i =0; i < nome.length; i++) {
             if (nome[i].equalsIgnoreCase(bnome)) {
                 System.out.println("Posição do nome "+bnome+" encontrado na "+i);
                 encontrado = true;
